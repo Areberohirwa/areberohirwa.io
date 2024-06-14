@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Radar</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Welcome</h1>
+    <header>
+        <h1>Weather Radar</h1>
+
+        <input type="text" name="city" class="searched" placeholder="search your city">
+
+        <button class="search">search</button>
+    </header>
+    <main>
+        <div class="temp-now">
+            <h1 class="city-name">City</h1>
+            <img src="img/drizzle.png" alt="" class="icon">
+            <h3 class="rain-perc">Country <span class="rain-percs">0</span></h3>
+            <h2 class="temp">Temperature <span class="temp-nows">0</span>°C</h2>
+
+        </div>
+        <div class="details">
+            <div>
+                <h4>Feels Like</h4>
+                <h3>Temp <span class="feel-data">0</span>°C</h3>
+            </div>
+            <div>
+                <h4>Wind</h4>
+                <h3>Speed <span class="wind-data">0</span>km/h</h3>
+            </div>
+            <div>
+                <h4>Weather Status</h4>
+                <h3><span class="weat-data">WET</span></h3>
+            </div>
+            <div>
+                <h4>Pressure</h4>
+                <h3>Amount <span class="pres-data">0</span></h3>
+            </div>
+            <div>
+                <h4>Visibility</h4>
+                <h3>Distance <span class="vis-data">0</span>m</h3>
+            </div>
+            <div>
+                <h4>Humidity</h4>
+                <h3>Percentage <span class="prec-data">0</span>%</h3>
+            </div>
+        </div>
+        <div class="sun">
+            <div class="sun-details">
+                <h2>Sunshine</h2>
+                <h4>Time <span class="sunshine-time">0</span></h4>
+            </div>
+            <div class="sun-details">
+                <h2>Sunset</h2>
+                <h4>Time <span class="sunset-time">0</span></h4>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+
+
+    <script src="main.js"></script>
 </body>
+
 </html>
